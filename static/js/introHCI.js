@@ -12,7 +12,7 @@ function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("JavaScript has taken control");
 		$("button#testjs").text("Often times I feel apathetic and Helpless :_ (");
-		$(".jumbotron p").addClass("active");
+		$(".jumbotron p").toggleClass("active");
 
 	});
 
@@ -37,7 +37,7 @@ function initializePage() {
 		
 
 	}else{
-		$(".project-description").html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
+		$(".project-description").fadeOut();
 	}
 
 	}
